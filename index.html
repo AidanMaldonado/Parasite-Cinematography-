@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Notable&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Parasite Cinematography</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1 id="logo">Parasite</h1>
+        <ul>
+          <li><a href="#cinematography">Cinematography</a></li>
+          <li><a href="#characters">Characters</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="hero">
+        <h1>"Movie of the year"</h1>
+      </section>
+      <section id="cinematography">
+        <h1>Cinematography</h1>
+      </section>
+      <section id="characters">
+        <div class="character-container">
+          <!-- Carousel slideshow slides -->
+          <div class="slides fade">
+            <div class="numbertext">1 / 3</div>
+            <img
+              src="assets/character1.jpg"
+              alt="Kang-ho Song in Native American outfit"
+            />
+            <div class="caption">Kang-ho Song</div>
+          </div>
+
+          <div class="slides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="assets/character-2.png" alt="" />
+            <div class="caption">Choi Woo-sik</div>
+          </div>
+
+          <div class="slides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="assets/character3.jpg" alt="" />
+            <div class="caption">So-dam Park</div>
+          </div>
+        </div>
+
+        <!-- Dot outline -->
+        <div class="dots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

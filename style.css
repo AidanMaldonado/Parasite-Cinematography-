@@ -1,0 +1,182 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+li,
+a {
+  font-size: 3rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* NAV */
+header {
+  background: #1c77c3;
+  color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+}
+
+nav {
+  min-height: 10vh;
+  display: flex;
+  width: 90%;
+  padding: 2rem;
+  margin: auto;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+#logo {
+  flex: 2 1 40rem;
+  font-family: "Notable", sans-serif;
+}
+
+/* Hero section */
+
+#hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("assets/parasite1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 90vh;
+}
+
+#hero h1 {
+  padding: 10rem;
+  color: white;
+  font-family: "Notable", sans-serif;
+  font-size: 3.5rem;
+  position: relative;
+  animation: movingBtn 4s 1 forwards;
+  animation-delay: 1s;
+}
+
+/* Cinematography */
+
+#cinematography {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("assets/parasite2.jpg");
+  min-height: 100vh;
+  color: white;
+}
+
+#cinematography h1 {
+  font-family: "Notable", sans-serif;
+  font-size: 3.5rem;
+  padding: 10rem 0rem 0rem 5rem;
+  position: relative;
+  animation: movingBtn 4s 1 forwards;
+  animation-delay: 4s;
+}
+
+@keyframes movingBtn {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    left: 80rem;
+    top: 0rem;
+  }
+}
+
+/* Carousel */
+#characters img {
+  width: 100%;
+  min-height: 100vh;
+  max-height: 100vh;
+}
+
+.dots {
+  text-align: center;
+  background-color: #1c77c3;
+}
+
+.slides {
+  display: none;
+  position: relative;
+}
+
+.caption {
+  color: #f2f2f2;
+  font-size: 4rem;
+  position: absolute;
+  bottom: 4rem;
+  width: 100%;
+  text-align: center;
+  font-family: "Notable", sans-serif;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 4rem;
+  margin: 2rem 2rem;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 2rem;
+  width: 2rem;
+  margin: 4rem 2rem;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: black;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  font-size: 0px;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
